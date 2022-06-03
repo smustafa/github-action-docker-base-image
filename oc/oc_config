@@ -1,0 +1,14 @@
+#Your Cluster Settings here
+
+apiVersion: v1
+kind: Config
+clusters:
+- cluster:
+    server: https://cluster1.company.com:8443
+  name: Cluster-1
+contexts:
+- context:
+    cluster: Cluster-1
+    namespace: default
+  name: Cluster-1
+
